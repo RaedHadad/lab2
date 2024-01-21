@@ -10,7 +10,7 @@ public class SharedData {
     /**
      * Constructs a new SharedData object with the specified integer array and constant 'b'.
      *
-     * @param array The integer array to be encapsulated.
+     * @paramS array The integer array to be encapsulated.
      * @param b     The constant integer 'b'.
      */
     public SharedData(int[] array, int b) {
