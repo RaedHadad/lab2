@@ -1,43 +1,74 @@
-public class SharedData 
-{//redan change
-	private int [] array;
-	private boolean [] winArray;
-	private boolean flag;
-	private final int b;
-	
-	public SharedData(int[] array, int b) {
-		
-		this.array = array;
-		this.b = b;
-	}
+public class SharedData {
+    private int[] array;
 
-	public boolean[] getWinArray() 
-	{
-		return winArray;
-	}
+    private boolean[] winArray;
 
-	public void setWinArray(boolean [] winArray) 
-	{
-		this.winArray = winArray;
-	}
+    private boolean flag;
 
-	public int[] getArray() 
-	{
-		return array;
-	}
+    private final int b;
 
-	public int getB() 
-	{
-		return b;
-	}
+    /**
+     * Constructs a new SharedData object with the specified integer array and constant 'b'.
+     *
+     * @param array The integer array to be encapsulated.
+     * @param b     The constant integer 'b'.
+     */
+    public SharedData(int[] array, int b) {
+        this.array = array;
+        this.b = b;
+    }
 
-	public boolean getFlag() 
-	{
-		return flag;
-	}
+    /**
+     * Gets the encapsulated boolean array 'winArray'.
+     *
+     * @return The encapsulated boolean array 'winArray'.
+     */
+    public boolean[] getWinArray() {
+        return winArray;
+    }
 
-	public void setFlag(boolean flag) {
-		this.flag = flag;
-	}
+    /**
+     * Sets the  boolean array 'winArray'.
+     *
+     * @param winArray The boolean array to be encapsulated.
+     */
+    public void setWinArray(boolean[] winArray) {
+        this.winArray = winArray;
+    }
 
+    /**
+     * Gets the integer array .
+     *
+     * @return The integer array .
+     */
+    public int[] getArray() {
+        return array;
+    }
+
+    /**
+     * Gets integer 'b'.
+     *
+     * @return integer 'b'.
+     */
+    public int getB() {
+        return b;
+    }
+
+    /**
+     * Gets the value of the flag.
+     *
+     * @return The value of the flag.
+     */
+    public boolean getFlag() {
+        return flag;
+    }
+
+    /**
+     * Sets the value of the flag.
+     *
+     * @param flag The new value of the flag.
+     */
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
 }
